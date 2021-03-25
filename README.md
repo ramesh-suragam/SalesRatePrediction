@@ -18,3 +18,5 @@ python app.py
 3. By default, flask will run on port 5000, navigate to the below URL.
 
 URL: http://localhost:5000
+
+Public URL: http://sales-rate-prediction.herokuapp.com
