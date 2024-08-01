@@ -1,22 +1,34 @@
-# SalesRatePrediction
+# Sales Rate Prediction with Flask
 
-## This project has the below major parts:
+## Project Overview
 
-1. Sales_rate_prediction.ipynb: This file contains code for the Machine Learning model to predict the sales rate.
-2. app.py - This file contains Flask APIs that receives employee details through GUI or API calls, computes the precited value based on the model and returns it.
-3. templates - This folder contains the HTML template to allow user to enter the input details and display the predicted sales.
-4. static - This folder contains the css template to style the webpage.
+This project demonstrates a machine learning model for predicting sales rates. It includes components for model training and deployment with Flask. The project is structured as follows:
 
-## Running the project
+- **`Sales_rate_prediction.ipynb`**: Contains the code for training the machine learning model to predict sales rates.
+- **`app.py`**: Flask application that receives employee details through a GUI or API calls, computes the predicted sales rate based on the model, and returns the result.
+- **`templates/`**: Contains HTML templates for user input and displaying the predicted sales rate.
+- **`static/`**: Contains CSS files for styling the webpage.
 
-1. Ensure that you are in the project home directory. Make sure the serialized model.pkl file also exists in this directory.
+## Running the Project
 
-2. Now run the below command to start Flask API
+### Local Deployment
 
-python app.py
+1. **Navigate to the Project Directory**: Ensure you are in the project home directory where the `model.pkl` file is also located.
 
-3. By default, flask will run on port 5000, navigate to the below URL.
+2. **Start the Flask Application**: Run the following command to start the Flask server:
+   ```bash
+   python app.py
+   ```
+3. **Access the Application**: By default, the Flask server runs on port 5000. Open your web browser and navigate to:
+   - [http://localhost:5000](http://localhost:5000)
 
-URL: http://localhost:5000
+### Public Deployment
 
-Public URL: http://sales-rate-prediction.herokuapp.com
+1. **Access the Model API**: Once deployed publicly, you can access the application at:
+   - [http://sales-rate-prediction.herokuapp.com](http://sales-rate-prediction.herokuapp.com)
+
+## Conclusion
+
+The **`Sales_Rate_Prediction_Flask`** project showcases the application of machine learning for predicting sales rates and demonstrates deployment using Flask. This project provides a complete example of integrating a machine learning model with a web application for real-time predictions.
+
+---
